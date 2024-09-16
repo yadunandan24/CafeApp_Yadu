@@ -45,6 +45,7 @@ namespace CafeApi
             builder.Services.AddTransient<ICategory, CategoryDA>();
             builder.Services.AddTransient<IProduct,ProductDA>();
             builder.Services.AddTransient<IBill, BillDA>();
+            builder.Services.AddTransient<IDashboard, DashboardDA>();
 
             var app = builder.Build();
 
